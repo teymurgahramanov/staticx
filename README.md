@@ -1,11 +1,12 @@
 # StaticX
 
-Minimalistic Nginx image compiled and configured for only serving static content.
+Minimalistic Nginx image compiled and configured *only for serving static content*.
 
 ## Features
 - Minimal footprint ~ 9.5 MB
 - Compiled with only necessary modules
 - Only GET method is allowed
+- Essential security configurations
   
 ## Usage
 ### Docker Run
@@ -23,9 +24,9 @@ services:
     container_name: staticx1
     image: teymurgahramanov/staticx
     ports:
-    - "8081:80"
+      - "8081:80"
     volumes:
-    - ./data/public:/etc/nginx/staticx:ro
+      - ./data/public:/etc/nginx/staticx:ro
 
 #Example: Run instance statix2 for private data with HTTP Basic Auth
   statix2:
