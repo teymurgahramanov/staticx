@@ -1,6 +1,7 @@
 # StaticX
 
 Minimalistic and secure Nginx image compiled and configured *only for serving static content*.
+https://hub.docker.com/r/teymurgahramanov/staticx
 
 ## Features
 - Minimal footprint ~ 9.5 MB
