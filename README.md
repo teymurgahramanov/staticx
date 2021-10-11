@@ -24,9 +24,9 @@ services:
     container_name: staticx1
     image: staticx:latest
     ports:
-    - "8081:80"
+      - "8081:80"
     volumes:
-    - ./data/public:/etc/nginx/staticx:ro
+      - ./data/public:/etc/nginx/staticx:ro
 
 #Example: Run instance statix2 for private data with HTTP Basic Auth
   statix2:
