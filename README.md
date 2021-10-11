@@ -1,6 +1,6 @@
 # StaticX
 
-Minimalistic Nginx image compiled and configured *only for serving static content*.
+Minimalistic and secure Nginx image compiled and configured *only for serving static content*.
 
 ## Features
 - Minimal footprint ~ 9.5 MB
