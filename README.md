@@ -1,11 +1,12 @@
 # StaticX
 
-Minimalistic Nginx image compiled and configured for only serving static content.
+Minimalistic Nginx image compiled and configured for *only serving static content*.
 
 ## Features
 - Minimal footprint ~ 9.5 MB
 - Compiled with only necessary modules
 - Only GET method is allowed
+- Essential security configurations
   
 ## Usage
 ### Docker Run
