@@ -6,7 +6,7 @@ Minimalistic and secure Nginx image compiled and configured *only for serving st
 - Minimal footprint ~ 9.5 MB
 - Compiled with only necessary modules
 - Only GET method is allowed
-- Essential security configurations
+- Security configurations
   
 ## Usage
 ### Docker Run
