@@ -19,6 +19,7 @@ cd nginx
     --group=nginx \
     --with-threads \
     --with-file-aio \
+    --with-http_realip_module \
     --with-http_gunzip_module \
     --with-http_v2_module \
     --without-http_ssi_module \
