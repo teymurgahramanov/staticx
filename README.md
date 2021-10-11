@@ -10,7 +10,7 @@ Minimalistic Nginx image compiled and configured for only serving static content
 ## Usage
 ### Docker Run
 ```
-docker run --name instance-name --rm --mount type=bind,source="$(pwd)"/yourDir,target=/etc/nginx/staticx -d -p 80:80/tcp static:latest
+docker run --name instance-name --rm --mount type=bind,source="$(pwd)"/yourDir,target=/etc/nginx/staticx -d -p 80:80/tcp teymurgahramanov/staticx
 ```
 
 ### Docker Compose
@@ -21,7 +21,7 @@ version: '3'
 services:
   statix1:
     container_name: staticx1
-    image: staticx:latest
+    image: teymurgahramanov/staticx
     ports:
     - "8081:80"
     volumes:
@@ -30,7 +30,7 @@ services:
 #Example: Run instance statix2 for private data with HTTP Basic Auth
   statix2:
     container_name: staticx2
-    image: staticx:latest
+    image: teymurgahramanov/staticx
     ports:
       - "8082:80"
     volumes:
