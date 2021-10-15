@@ -59,6 +59,10 @@ cd nginx
     --without-stream_upstream_least_conn_module \
     --without-stream_upstream_random_module \
     --without-stream_upstream_zone_module
+sed -i 's@"nginx/"@"-/"@g' src/core/nginx.h
+sed -i 's@r->headers_out.server == NULL@0@g' src/http/ngx_http_header_filter_module.c
+sed -i 's@r->headers_out.server == NULL@0@g' src/http/v2/ngx_http_v2_filter_module.c
+sed -i 's@<hr><center>nginx</center>@@g' src/http/ngx_http_special_response.c
 mkdir -p /var/cache/nginx/client_temp/
 make
 make install
