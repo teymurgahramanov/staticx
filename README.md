@@ -1,12 +1,13 @@
 # StaticX
 
-Minimalistic Nginx image compiled and configured *only for serving static content*.
+Minimalistic and secure Nginx image compiled and configured *only for serving static content*.
+https://hub.docker.com/r/teymurgahramanov/staticx
 
 ## Features
 - Minimal footprint ~ 9.5 MB
 - Compiled with only necessary modules
 - Only GET method is allowed
-- Essential security configurations
+- Security configurations
   
 ## Usage
 ### Docker Run
